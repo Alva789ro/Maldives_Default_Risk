@@ -89,7 +89,7 @@ Article link:
 https://edition.mv/news/17487 
 
 github link for data extracted from the International Mutual Fund:
-https://raw.githubusercontent.com/fivethirtyeight/data/master/state-of-the-state/words.csv (Links to an external site.)
+https://raw.githubusercontent.com/fivethirtyeight/data/master/state-of-the-state/words.csv 
 
 github repository:
-https://github.com/fivethirtyeight/data/tree/master/state-of-the-state (Links to an external site.)
+https://github.com/Alva789ro/Maldives_Default_Risk.git 
