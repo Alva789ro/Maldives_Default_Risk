@@ -38,7 +38,7 @@ AND realgdp.year = lendingborrowingnet.year
 AND realgdp.year = accountbalance.year
 ORDER BY realgdp.year DESC
 LIMIT 7;
-This query selects the YTY change from all the tables (realgdp, nominalgdp, gdppercapita, inflation, lendingborrowingnet, and accountbalance) in desceding order since 2015. Here are some results:
+This query selects the YTY change from all the tables (realgdp, nominalgdp, gdppercapita, inflation, lendingborrowingnet, and accountbalance) in descending order since 2015. Here are some results:
 (‘2021’, ‘0.132 ‘, ‘0.154’, ‘0.113’, ‘0.015’, ‘0.381’, ‘0.4’, ‘09’)
 (‘2020’, ‘-0.081’, ’-0.075’, ‘-0.096’, ‘0.015’, ‘-0.987’, ‘0.1’, ‘81’)
 (‘2019’, ‘0.057’, ‘0.075’, ‘0.039’, ‘0.013’, ‘-0.146’, ‘-0.0’, ‘64’)
@@ -46,7 +46,7 @@ This query selects the YTY change from all the tables (realgdp, nominalgdp, gdpp
 (‘2017’, ’0.068’, ‘0.088’, ‘0.050’, ‘0.023’, ‘0.215’, ‘0.0’, ‘01’)
 (‘2016’, ‘0.063’, ‘0.074’, ‘0.046’, ‘0.008’, ‘-0.392’, ‘-2.3’, ‘92’)
 (2015, ‘0.029’, ‘0.040’, ‘0.012‘, ‘0.019’, ‘0.004’, ‘-1.1’, ’29’)
-This help us compare the change in each of the economic metrics, represented by the tables, over the years.
+This helps us compare the change in each of the economic metrics, represented by the tables, over the years.
 SELECT realgdp.year, nominalgdp.NominalGDP AS NominalGDP, realgdp.YTYchange AS Change_in_real_GDP, accountbalance.balance AS accountbalance
 FROM realgdp, nominalgdp, accountbalance
 WHERE realgdp.year = nominalgdp.year
@@ -62,7 +62,7 @@ This query returns the nominal GDP amount, the real GDP change, and the account 
 (‘2016’, ‘6.616’, ‘0.063’, ‘-1.564’)
 (‘2015’, ‘6.158’, ‘0.029’, ‘-0.461’)
 
-In a query without the ‘LIMIT 6’ command, we would have noticed that instead of 22 results (which are all the entries in the database) we would receive only 19. This is because the years 2005, 2009 and 2020 we had a negative Real GDP change.
+In a query without the ‘LIMIT 6’ command, we would have noticed that instead of 22 results (which are all the entries in the database) we would receive only 19. This is because in the years 2005, 2009 and 2020 we had a negative Real GDP change.
 Also, this query reveals that even if the Real GDP change is positive and the Nominal GDP maintains a stable rate, the Account Balance of the Maldives is always negative. This will be better showcased in the following query:
 SELECT year, balance, YTYchange
 FROM accountbalance
@@ -89,7 +89,7 @@ Article link:
 https://edition.mv/news/17487 
 
 Link for data extracted from the International Mutual Fund:
-https://www.imf.org/en/Publications/WEO/weo-database/2020/April/weo-report?c=556,&s=NGDP_RPCH,PPPGDP,NGDPRPPPPCPCH,PCPIPCH,PCPIEPCH,GGXCNL_NGDP,BCA_NGDPD,&sy=1999&ey=2021&ssm=0&scsm=1&scc=0&ssd=1&ssc=0&sic=0&sort=country&ds=.&br=1
+https://www.imf.org/en/Publications/WEO/weo-database/2020/April/weo-report?c=556,&s=NGDP_RPCH,PPPGDP,NGDPRPPPPCPCH,PCPIPCH,PCPIEPCH,GGXCNL_NGDP,BCA_NGDPD,&sy=1999&ey=2021&ssm=0&scsm=1&scc=0&ssd=1&ssc=0&sic=0&sort=country&ds=.&br=1 
 
-github repository:
-https://github.com/Alva789ro/Maldives_Default_Risk.git 
+Github repository:
+https://github.com/Alva789ro/Maldives_Default_Risk.git
