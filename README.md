@@ -89,7 +89,7 @@ Article link:
 https://edition.mv/news/17487 
 
 github link for data extracted from the International Mutual Fund:
-https://raw.githubusercontent.com/fivethirtyeight/data/master/state-of-the-state/words.csv 
+https://www.imf.org/en/Publications/WEO/weo-database/2020/April/weo-report?c=556,&s=NGDP_RPCH,PPPGDP,NGDPRPPPPCPCH,PCPIPCH,PCPIEPCH,GGXCNL_NGDP,BCA_NGDPD,&sy=1999&ey=2021&ssm=0&scsm=1&scc=0&ssd=1&ssc=0&sic=0&sort=country&ds=.&br=1
 
 github repository:
 https://github.com/Alva789ro/Maldives_Default_Risk.git 
